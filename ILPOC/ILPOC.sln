@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ILPOC", "ILPOC.csproj", "{BC014487-4311-4251-A939-107C82634DE9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ILPOC.LibraryTests", "..\ILPOC.LibraryTests\ILPOC.LibraryTests.csproj", "{838E577D-88FC-4232-A2A1-6C3D9DD42152}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{BC014487-4311-4251-A939-107C82634DE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC014487-4311-4251-A939-107C82634DE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC014487-4311-4251-A939-107C82634DE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{838E577D-88FC-4232-A2A1-6C3D9DD42152}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{838E577D-88FC-4232-A2A1-6C3D9DD42152}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{838E577D-88FC-4232-A2A1-6C3D9DD42152}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{838E577D-88FC-4232-A2A1-6C3D9DD42152}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

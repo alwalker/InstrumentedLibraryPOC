@@ -4,9 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ILPOC
+namespace ILPOC.Library
 {
-    public class Class1
+    public class EntityOne
     {
+        public int Id { get; set; }
+        public string Name { get; set; }
+
     }
 }
