@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ILPOC", "ILPOC.csproj", "{B
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ILPOC.LibraryTests", "..\ILPOC.LibraryTests\ILPOC.LibraryTests.csproj", "{838E577D-88FC-4232-A2A1-6C3D9DD42152}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ILPOC.ExampleConsole", "ILPOC.ExampleConsole\ILPOC.ExampleConsole.csproj", "{6DD26CE6-6ECE-446E-B4F4-C2397872288F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{838E577D-88FC-4232-A2A1-6C3D9DD42152}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{838E577D-88FC-4232-A2A1-6C3D9DD42152}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{838E577D-88FC-4232-A2A1-6C3D9DD42152}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DD26CE6-6ECE-446E-B4F4-C2397872288F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DD26CE6-6ECE-446E-B4F4-C2397872288F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DD26CE6-6ECE-446E-B4F4-C2397872288F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DD26CE6-6ECE-446E-B4F4-C2397872288F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

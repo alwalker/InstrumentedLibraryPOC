@@ -10,7 +10,10 @@ namespace ILPOC.Web
     {
         public MainModule()
         {
-            Get["/GetOnesForTwo/{name}"] = _ => { return 200; };
+            Get["/GetOnesForTwo/{name}"] = _ => {
+                //return Facade.GetOnesForTwo(_.name); 
+                return "HAI " + _.name + "!!!";
+            };
         }
     }
 }
