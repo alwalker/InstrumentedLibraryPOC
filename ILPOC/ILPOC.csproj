@@ -57,6 +57,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Facade.cs" />
     <Compile Include="Library\Controller.cs" />
     <Compile Include="Library\EntityOne.cs" />
     <Compile Include="Library\EntityTwo.cs" />
