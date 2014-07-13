@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,8 +12,7 @@ namespace ILPOC.Web
         public MainModule()
         {
             Get["/GetOnesForTwo/{name}"] = _ => {
-                //return Facade.GetOnesForTwo(_.name); 
-                return "HAI " + _.name + "!!!";
+                return JsonConvert.SerializeObject(Facade.GetOnesForTwo(_.name)); 
             };
         }
     }

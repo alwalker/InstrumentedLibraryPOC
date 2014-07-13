@@ -1,6 +1,6 @@
 ﻿using ILPOC.Library;
 using ILPOC.Web;
-using Microsoft.Owin.Hosting;
+using Nancy.Hosting.Self;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,13 +18,14 @@ namespace ILPOC
         {
             _controller.Init();
 
-            new Thread(new ThreadStart(() => 
+            new Thread(new ThreadStart(() =>
             {
-                var url = "http://+:8080";
-
-                using (WebApp.Start<Startup>(url))
+                var config = new HostConfiguration();
+                config.UrlReservations = new UrlReservations() { CreateAutomatically = true };
+                using (var host = new NancyHost(config, new Uri("http://localhost:9000")))
                 {
-                    for (; ; ) { }
+                    host.Start();
+                    while (true) Thread.Sleep(10000000);
                 }
             })).Start();
         }

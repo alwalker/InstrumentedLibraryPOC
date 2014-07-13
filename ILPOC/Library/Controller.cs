@@ -26,7 +26,15 @@ namespace ILPOC.Library
 
         public IList<EntityOne> GetOnesForTwo(string twoName)
         {
-            return _twos.Single(two => two.Name == twoName).Ones;
+            foreach (var two in _twos)
+            {
+                if (two.Name == twoName)
+                {
+                    return two.Ones;
+                }
+            }
+
+            return null;
         }
     }
 }
