@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using ILPOC.Library;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +14,15 @@ namespace ILPOC.Web
         {
             Get["/GetOnesForTwo/{name}"] = _ => {
                 return JsonConvert.SerializeObject(Facade.GetOnesForTwo(_.name)); 
+            };
+            Get["/GetTwos"] = _ =>
+            {
+                return JsonConvert.SerializeObject(Facade.GetTwos());
+            };
+            Post["/AddTwo/{name}"] = _ =>
+            {
+                Facade.AddTwo(new EntityTwo() { Name = _.name });
+                return 200;
             };
         }
     }

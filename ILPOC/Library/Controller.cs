@@ -36,5 +36,19 @@ namespace ILPOC.Library
 
             return null;
         }
+
+        public void AddTwo(EntityTwo two)
+        {
+            using (var context = new MyContext()) {
+                context.Twos.Add(two);
+                context.SaveChanges();
+            }
+            _twos.Add(two);
+        }
+
+        public List<EntityTwo> GetTwos()
+        {
+            return _twos;
+        }
     }
 }

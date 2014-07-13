@@ -34,5 +34,15 @@ namespace ILPOC
         {
             return _controller.GetOnesForTwo(twoName);
         }
+
+        public static void AddTwo(EntityTwo two)
+        {
+            _controller.AddTwo(two);
+        }
+
+        public static List<EntityTwo> GetTwos()
+        {
+            return _controller.GetTwos();
+        }
     }
 }
